@@ -3,10 +3,13 @@ Example **Godot 3.1.1** project created to ask for help. I want to replace Light
 
 This is with Light2D (and what I want to achieve without Light2D):
 
-![CharacterLight2D](https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/CharacterLight2D.png)
+<img src="https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/CharacterLight2D.png" width="100">
 
 This is with sprite blending:
 
-![CharacterFakeLight](https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/CharacterFakeLight.png)
+<img src="https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/CharacterFakeLight.png" width="100">
 
-![Screenshot](https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/Light2DHelp.png)
+Example screenhot:
+
+<img src="https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/Light2DHelp.png" width="450">
+

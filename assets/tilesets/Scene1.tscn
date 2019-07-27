@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/tilesets/tileset_basic.tres" type="TileSet" id=1]
+[ext_resource path="res://CharacterLight2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://CharacterFakeLight.tscn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.191, 0.191 )
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Grass" type="TileMap" parent="Map"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0 )
+
+[node name="Path" type="TileMap" parent="Map"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65536, 1, 0, 65537, 1, 0, 65538, 1, 0, 65539, 1, 0, 65540, 1, 0, 65541, 1, 0, 65542, 1, 0, 131078, 2, 0, 196614, 2, 0, 262150, 2, 0, 327680, 1, 0, 327681, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327689, 1, 0, 327690, 1, 0, 327691, 1, 0 )
+
+[node name="Objects" type="TileMap" parent="Map"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 196609, 3, 0, 196616, 3, 0, 458756, 3, 0, 458762, 3, 0 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0, 0.180392, 1, 1 )
+
+[node name="CharactersLight2D" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Character1" parent="CharactersLight2D" instance=ExtResource( 2 )]
+position = Vector2( 25.4001, 36.1865 )
+
+[node name="Character2" parent="CharactersLight2D" instance=ExtResource( 2 )]
+position = Vector2( 50.6863, 75.7145 )
+
+[node name="Character3" parent="CharactersLight2D" instance=ExtResource( 2 )]
+position = Vector2( 115.4, 76.1864 )
+
+[node name="Character4" parent="CharactersLight2D" instance=ExtResource( 2 )]
+position = Vector2( 125.4, 26.1865 )
+
+[node name="Character5" parent="CharactersLight2D" instance=ExtResource( 2 )]
+position = Vector2( 96.4001, 100.186 )
+
+[node name="Character6" parent="CharactersLight2D" instance=ExtResource( 2 )]
+position = Vector2( 88.9577, 36.449 )
+
+[node name="CharactersFakeLight" type="Node2D" parent="."]
+
+[node name="CharacterFakeLight" parent="CharactersFakeLight" instance=ExtResource( 3 )]
+position = Vector2( 56, 36 )
+
+[node name="CharacterFakeLight2" parent="CharactersFakeLight" instance=ExtResource( 3 )]
+position = Vector2( 20, 76 )
+
+[node name="CharacterFakeLight3" parent="CharactersFakeLight" instance=ExtResource( 3 )]
+position = Vector2( 86, 72 )
+
+[node name="CharacterFakeLight4" parent="CharactersFakeLight" instance=ExtResource( 3 )]
+position = Vector2( 46, 122 )
+
+[node name="CharacterFakeLight5" parent="CharactersFakeLight" instance=ExtResource( 3 )]
+position = Vector2( 136, 122 )
+
+[node name="CharacterFakeLight6" parent="CharactersFakeLight" instance=ExtResource( 3 )]
+position = Vector2( 166, 72 )

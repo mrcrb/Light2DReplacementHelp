@@ -9,7 +9,7 @@ This is with sprite blending:
 
 <img src="https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/CharacterFakeLight.png" width="100">
 
-Example screenhot:
+Example screenshot:
 
 <img src="https://github.com/mrcrb/Light2DReplacementHelp/blob/master/assets/screenshots/Light2DHelp.png" width="450">
 
